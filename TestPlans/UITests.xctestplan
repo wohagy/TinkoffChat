@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "EBE94092-A27F-4201-B80F-0012619489B4",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:iOS Chat.xcodeproj",
+        "identifier" : "FA3E689D28344F29009B8648",
+        "name" : "ChatUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -1,0 +1,25 @@
+desc "Build for testing"
+lane :build_app_for_testing do |options|
+    cocoapods
+    scan(
+	 clean: true,
+	 build_for_testing: true
+    )
+
+    puts	"Build for testing completed"
+end
+
+desc "Run tests"
+lane :run_unittests do |options|
+    scan(skip_build: true)
+
+    puts	"Run tests completed"
+end
+
+desc "Build and test"
+lane :build_and_test do |options|
+    build_app_for_testing
+    run_unittests
+
+    puts	"Build and test completed"
+end
